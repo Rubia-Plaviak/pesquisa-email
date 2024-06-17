@@ -33,7 +33,8 @@ let usuario = [
 console.log("Olá, tudo bem? Qual o seu email?");
 
 process.stdin.on("data", function (data) {
-  let input = data.toString().trim();
+  let email = data.toString().trim();
+
   for (let i = 0; i < usuario.length, i++; ) {
     if (usuario[i].email === input) {
       let salvar = usuario[i];
