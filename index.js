@@ -34,17 +34,15 @@ console.log("Olá, tudo bem? Qual o seu email?");
 
 process.stdin.on("data", function (data) {
   let email = data.toString().trim();
-
+  let usuarios;
   for (let i = 0; i < usuario.length, i++; ) {
-    if (usuario[i].email === input) {
-      let salvar = usuario[i];
+    if (usuario[i].email === email) {
+      usuarios = usuario[i];
     }
-    if (salvar) {
-      console.log("bem-vindo(a)" + usuario[i]);
-      salvar = undefined;
+    if (usuario) {
+      console.log(usuario);
     } else {
       console.log("Usuario não encontrado");
-      salvar = undefined;
     }
   }
 });
